@@ -6,7 +6,7 @@ Before using this please install
 
 
 ```
-git curl wget fish
+git curl fish
 ```
 
 Then run 

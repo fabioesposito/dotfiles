@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # requirements
-# git curl wget fish
+# git curl fish
 
 # nix
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
@@ -13,6 +13,7 @@ starship init fish | source
 nix-env -iA nixpkgs.neovim \
     nixpkgs.go \
     nixpkgs.nodejs \
+    nixpkgs.yarn \
     nixpkgs.exa \
     nixpkgs.du-dust \
     nixpkgs.bottom \
@@ -25,9 +26,10 @@ nix-env -iA nixpkgs.neovim \
     nixpkgs.kubectl \
     nixpkgs.helm
 
-
 # for more pkgs visit https://search.nixos.org/packages
 
+# add to path
+fish_add_path ~/.yarn/bin
 
 # set alias
 alias gst="git status"
@@ -56,3 +58,5 @@ funcsave du
 
 alias cat="bat"
 funcsave cat
+
+echo "done!"
