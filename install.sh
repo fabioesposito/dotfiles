@@ -6,22 +6,24 @@
 # nix
 sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
-# starship
-curl -sS https://starship.rs/install.sh | sh
-starship init fish | source
-
+# core dev tools
 nix-env -iA nixpkgs.neovim \
-    nixpkgs.go \
-    nixpkgs.nodejs \
-    nixpkgs.yarn \
+    nixpkgs.starship
     nixpkgs.exa \
     nixpkgs.du-dust \
     nixpkgs.bottom \
     nixpkgs.ripgrep \
     nixpkgs.bat \
     nixpkgs.procs \
-    nixpkgs.tealdeer \
-    nixpkgs.awscli \
+    nixpkgs.tealdeer 
+
+# languages
+nix-env -iA nixpkgs.go \
+    nixpkgs.nodejs \
+    nixpkgs.deno
+    
+# k8s
+nix-env -iA nixpkgs.awscli \
     nixpkgs.google-cloud-sdk \
     nixpkgs.kubectl \
     nixpkgs.helm
