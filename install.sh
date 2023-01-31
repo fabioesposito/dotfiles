@@ -8,7 +8,9 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
 # core dev tools
 nix-env -iA nixpkgs.neovim \
-    nixpkgs.starship
+    nixpkgs.starship \
+    nixpkgs.tmux \
+    nixpkgs.stow \
     nixpkgs.exa \
     nixpkgs.du-dust \
     nixpkgs.bottom \
@@ -26,39 +28,25 @@ nix-env -iA nixpkgs.go \
 nix-env -iA nixpkgs.awscli \
     nixpkgs.google-cloud-sdk \
     nixpkgs.kubectl \
+    nixpkgs.kubectx \
+    nixpkgs.k9s \
     nixpkgs.helm
 
 # for more pkgs visit https://search.nixos.org/packages
 
-# add to path
-fish_add_path ~/.yarn/bin
-
 # set alias
 alias gst="git status"
-funcsave gst
-
 alias gco="git checkout"
-funcsave gco
-
 alias gb="git branch"
-funcsave gb
-
 alias gl="git pull --rebase"
-funcsave gl
-
 alias vim="nvim"
-funcsave vim
-
 alias ls="exa"
-funcsave ls
-
 alias grep="rg"
-funcsave grep
-
 alias du="dust"
-funcsave du
-
 alias cat="bat"
-funcsave cat
+
+# TODO 
+# 1 create a default zshrc with aliases
+# 2 create a .ssh/config and stow
 
 echo "done!"
