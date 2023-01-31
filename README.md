@@ -6,7 +6,7 @@ Before using this please install
 
 
 ```
-git curl fish
+git curl zsh
 ```
 
 Then run 
@@ -17,4 +17,4 @@ Then run
 ## What is included
 
 - nix + nix packages for my dev env
-- fish aliases
+- cli aliases
