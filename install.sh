@@ -10,6 +10,8 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 nix-env -iA nixpkgs.neovim \
     nixpkgs.starship \
     nixpkgs.tmux \
+    nixpkgs.htop \
+    nixpkgs.neofetch \
     nixpkgs.stow \
     nixpkgs.exa \
     nixpkgs.du-dust \
