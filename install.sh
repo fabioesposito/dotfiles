@@ -8,6 +8,7 @@ sh <(curl -L https://nixos.org/nix/install) --no-daemon
 
 # core dev tools
 nix-env -iA nixpkgs.neovim \
+    nixpkgs.tree-sitter \
     nixpkgs.starship \
     nixpkgs.tmux \
     nixpkgs.htop \
@@ -23,6 +24,7 @@ nix-env -iA nixpkgs.neovim \
 
 # languages
 nix-env -iA nixpkgs.go \
+    nixpkgs.zig \
     nixpkgs.nodejs \
     nixpkgs.deno
     
