@@ -38,19 +38,7 @@ nix-env -iA nixpkgs.awscli \
 
 # for more pkgs visit https://search.nixos.org/packages
 
-# set alias
-alias gst="git status"
-alias gco="git checkout"
-alias gb="git branch"
-alias gl="git pull --rebase"
-alias vim="nvim"
-alias ls="exa"
-alias grep="rg"
-alias du="dust"
-alias cat="bat"
-
 # TODO 
-# 1 create a default zshrc with aliases
-# 2 create a .ssh/config and stow
+# create a .ssh/config and stow
 
 echo "done!"
