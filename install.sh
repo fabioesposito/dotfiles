@@ -12,6 +12,7 @@ nix-env -iA nixpkgs.neovim \
     nixpkgs.starship \
     nixpkgs.tmux \
     nixpkgs.htop \
+    nixpkgs.tig \
     nixpkgs.neofetch \
     nixpkgs.stow \
     nixpkgs.exa \
