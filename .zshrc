@@ -3,6 +3,8 @@ eval "$(starship init zsh)"
 export DENO_INSTALL="/home/fabio/.deno"
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+. /home/fabio/.nix-profile/etc/profile.d/nix.sh
+
 alias gst="git status"
 alias gco="git checkout"
 alias gb="git branch"
